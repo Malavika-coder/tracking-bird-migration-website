@@ -1,0 +1,1016 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_0f0c47d6f1bab07797a6cab2654d5126 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_0f0c47d6f1bab07797a6cab2654d5126" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_0f0c47d6f1bab07797a6cab2654d5126 = L.map(
+                "map_0f0c47d6f1bab07797a6cab2654d5126",
+                {
+                    center: [23.5, 80.0],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 5,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_860e1de1318c8f9dc41c760be9849a84 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_860e1de1318c8f9dc41c760be9849a84.addTo(map_0f0c47d6f1bab07797a6cab2654d5126);
+        
+    
+            var poly_line_ab504d245d174c1a166f26ef2bd7b89c = L.polyline(
+                [[34.0, 77.5], [31.5, 76.5], [29.5, 77.5], [27.5, 78.0], [25.5, 78.5], [22.5, 79.5]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_0f0c47d6f1bab07797a6cab2654d5126);
+        
+    
+        var popup_8ffc2b40ad5e55c27a470701df509759 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bbdf3c92950c4ff8936fd8babb13a15e = $(`<div id="html_bbdf3c92950c4ff8936fd8babb13a15e" style="width: 100.0%; height: 100.0%;">Bald Eagle Migration Route</div>`)[0];
+                popup_8ffc2b40ad5e55c27a470701df509759.setContent(html_bbdf3c92950c4ff8936fd8babb13a15e);
+            
+        
+
+        poly_line_ab504d245d174c1a166f26ef2bd7b89c.bindPopup(popup_8ffc2b40ad5e55c27a470701df509759)
+        ;
+
+        
+    
+    
+            poly_line_ab504d245d174c1a166f26ef2bd7b89c.bindTooltip(
+                `<div>
+                     Click to see Bald Eagle route
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_704c3c5b81e6e70bc6f781f395735895 = L.marker(
+                [34.0, 77.5],
+                {
+}
+            ).addTo(map_0f0c47d6f1bab07797a6cab2654d5126);
+        
+    
+            var icon_5ab6433f04603a50f50f4d4ced1aac5b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_667742d65227947bf1848f9f116e90ce = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_35aa6a127b3a3d08bfb378c13af3fb9c = $(`<div id="html_35aa6a127b3a3d08bfb378c13af3fb9c" style="width: 100.0%; height: 100.0%;"><b>Bald Eagle</b><br>Leh, Ladakh (Start)</div>`)[0];
+                popup_667742d65227947bf1848f9f116e90ce.setContent(html_35aa6a127b3a3d08bfb378c13af3fb9c);
+            
+        
+
+        marker_704c3c5b81e6e70bc6f781f395735895.bindPopup(popup_667742d65227947bf1848f9f116e90ce)
+        ;
+
+        
+    
+    
+            marker_704c3c5b81e6e70bc6f781f395735895.bindTooltip(
+                `<div>
+                     Bald Eagle: Leh, Ladakh (Start)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_704c3c5b81e6e70bc6f781f395735895.setIcon(icon_5ab6433f04603a50f50f4d4ced1aac5b);
+            
+    
+            var marker_0f9344be7d48dd1f29080830b49f721b = L.marker(
+                [31.5, 76.5],
+                {
+}
+            ).addTo(map_0f0c47d6f1bab07797a6cab2654d5126);
+        
+    
+            var icon_e592cf1852cb6ac0f08ef8a0c5f71e11 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fb82d6fdbd22579af8f25fb8eed90b3e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_540cb54f04ef8a07f42947b3aac1efbb = $(`<div id="html_540cb54f04ef8a07f42947b3aac1efbb" style="width: 100.0%; height: 100.0%;"><b>Bald Eagle</b><br>Dharamshala Rest</div>`)[0];
+                popup_fb82d6fdbd22579af8f25fb8eed90b3e.setContent(html_540cb54f04ef8a07f42947b3aac1efbb);
+            
+        
+
+        marker_0f9344be7d48dd1f29080830b49f721b.bindPopup(popup_fb82d6fdbd22579af8f25fb8eed90b3e)
+        ;
+
+        
+    
+    
+            marker_0f9344be7d48dd1f29080830b49f721b.bindTooltip(
+                `<div>
+                     Bald Eagle: Dharamshala Rest
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_0f9344be7d48dd1f29080830b49f721b.setIcon(icon_e592cf1852cb6ac0f08ef8a0c5f71e11);
+            
+    
+            var marker_583108184176517ec4bff504b3a72c32 = L.marker(
+                [29.5, 77.5],
+                {
+}
+            ).addTo(map_0f0c47d6f1bab07797a6cab2654d5126);
+        
+    
+            var icon_aae833befd669671dfc9cb327a3031fc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8681e38c4bb155a81b49fe0ab8a220f7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5255fae2da14b69e26691958ba8b5b60 = $(`<div id="html_5255fae2da14b69e26691958ba8b5b60" style="width: 100.0%; height: 100.0%;"><b>Bald Eagle</b><br>Dehradun Feeding</div>`)[0];
+                popup_8681e38c4bb155a81b49fe0ab8a220f7.setContent(html_5255fae2da14b69e26691958ba8b5b60);
+            
+        
+
+        marker_583108184176517ec4bff504b3a72c32.bindPopup(popup_8681e38c4bb155a81b49fe0ab8a220f7)
+        ;
+
+        
+    
+    
+            marker_583108184176517ec4bff504b3a72c32.bindTooltip(
+                `<div>
+                     Bald Eagle: Dehradun Feeding
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_583108184176517ec4bff504b3a72c32.setIcon(icon_aae833befd669671dfc9cb327a3031fc);
+            
+    
+            var marker_5ea6534c131c44c7725a2a21bb80e321 = L.marker(
+                [27.5, 78.0],
+                {
+}
+            ).addTo(map_0f0c47d6f1bab07797a6cab2654d5126);
+        
+    
+            var icon_d8952dc5ebf1cfc9d070e2d754c872ed = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1cf5882c08bcd8dd7e171e6054101615 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fdbfc9c9c2860527ab917523d6677f3a = $(`<div id="html_fdbfc9c9c2860527ab917523d6677f3a" style="width: 100.0%; height: 100.0%;"><b>Bald Eagle</b><br>Agra Stop</div>`)[0];
+                popup_1cf5882c08bcd8dd7e171e6054101615.setContent(html_fdbfc9c9c2860527ab917523d6677f3a);
+            
+        
+
+        marker_5ea6534c131c44c7725a2a21bb80e321.bindPopup(popup_1cf5882c08bcd8dd7e171e6054101615)
+        ;
+
+        
+    
+    
+            marker_5ea6534c131c44c7725a2a21bb80e321.bindTooltip(
+                `<div>
+                     Bald Eagle: Agra Stop
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_5ea6534c131c44c7725a2a21bb80e321.setIcon(icon_d8952dc5ebf1cfc9d070e2d754c872ed);
+            
+    
+            var marker_e53f2e597cf6826f876851d57380d626 = L.marker(
+                [25.5, 78.5],
+                {
+}
+            ).addTo(map_0f0c47d6f1bab07797a6cab2654d5126);
+        
+    
+            var icon_14279c8d1da001f488cc7b3a53fe7255 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d80d70998a8d174aaa6ce259fb37137a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9ca612d1044d90bc4c29e5708ef7c4b3 = $(`<div id="html_9ca612d1044d90bc4c29e5708ef7c4b3" style="width: 100.0%; height: 100.0%;"><b>Bald Eagle</b><br>Jhansi Rest</div>`)[0];
+                popup_d80d70998a8d174aaa6ce259fb37137a.setContent(html_9ca612d1044d90bc4c29e5708ef7c4b3);
+            
+        
+
+        marker_e53f2e597cf6826f876851d57380d626.bindPopup(popup_d80d70998a8d174aaa6ce259fb37137a)
+        ;
+
+        
+    
+    
+            marker_e53f2e597cf6826f876851d57380d626.bindTooltip(
+                `<div>
+                     Bald Eagle: Jhansi Rest
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e53f2e597cf6826f876851d57380d626.setIcon(icon_14279c8d1da001f488cc7b3a53fe7255);
+            
+    
+            var marker_96e097d6a8f14835b9dc9c8a3f2d3420 = L.marker(
+                [22.5, 79.5],
+                {
+}
+            ).addTo(map_0f0c47d6f1bab07797a6cab2654d5126);
+        
+    
+            var icon_a713727946b2c30f7acb9397fe8cd38a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8a5ed80cbcb432c2e9f09f782605af7e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_29d888d1c1ddc631ba072eabf4f73587 = $(`<div id="html_29d888d1c1ddc631ba072eabf4f73587" style="width: 100.0%; height: 100.0%;"><b>Bald Eagle</b><br>Nagpur (End)</div>`)[0];
+                popup_8a5ed80cbcb432c2e9f09f782605af7e.setContent(html_29d888d1c1ddc631ba072eabf4f73587);
+            
+        
+
+        marker_96e097d6a8f14835b9dc9c8a3f2d3420.bindPopup(popup_8a5ed80cbcb432c2e9f09f782605af7e)
+        ;
+
+        
+    
+    
+            marker_96e097d6a8f14835b9dc9c8a3f2d3420.bindTooltip(
+                `<div>
+                     Bald Eagle: Nagpur (End)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_96e097d6a8f14835b9dc9c8a3f2d3420.setIcon(icon_a713727946b2c30f7acb9397fe8cd38a);
+            
+    
+            var poly_line_786536cf4b46ad7d98b417529961507b = L.polyline(
+                [[30.9, 75.8], [29.4, 76.9], [28.6, 77.2], [27.2, 77.9], [26.5, 80.3]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_0f0c47d6f1bab07797a6cab2654d5126);
+        
+    
+        var popup_11dd555d2d0dc9ed55849c7038f90904 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_167e6509783f0762f04d6d41904020d2 = $(`<div id="html_167e6509783f0762f04d6d41904020d2" style="width: 100.0%; height: 100.0%;">House Sparrow Migration Route</div>`)[0];
+                popup_11dd555d2d0dc9ed55849c7038f90904.setContent(html_167e6509783f0762f04d6d41904020d2);
+            
+        
+
+        poly_line_786536cf4b46ad7d98b417529961507b.bindPopup(popup_11dd555d2d0dc9ed55849c7038f90904)
+        ;
+
+        
+    
+    
+            poly_line_786536cf4b46ad7d98b417529961507b.bindTooltip(
+                `<div>
+                     Click to see House Sparrow route
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_a1114b555311815c0e7ad3a383754b8d = L.marker(
+                [30.9, 75.8],
+                {
+}
+            ).addTo(map_0f0c47d6f1bab07797a6cab2654d5126);
+        
+    
+            var icon_d7d24c32ed4de3a438324281a35be605 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1a94566165be417d8ebf14497c7b6458 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_12d061166ddea67a13b7cb71db104138 = $(`<div id="html_12d061166ddea67a13b7cb71db104138" style="width: 100.0%; height: 100.0%;"><b>House Sparrow</b><br>Ludhiana (Start)</div>`)[0];
+                popup_1a94566165be417d8ebf14497c7b6458.setContent(html_12d061166ddea67a13b7cb71db104138);
+            
+        
+
+        marker_a1114b555311815c0e7ad3a383754b8d.bindPopup(popup_1a94566165be417d8ebf14497c7b6458)
+        ;
+
+        
+    
+    
+            marker_a1114b555311815c0e7ad3a383754b8d.bindTooltip(
+                `<div>
+                     House Sparrow: Ludhiana (Start)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a1114b555311815c0e7ad3a383754b8d.setIcon(icon_d7d24c32ed4de3a438324281a35be605);
+            
+    
+            var marker_94cd398b9ecbe18c8892c0908e0ba38b = L.marker(
+                [29.4, 76.9],
+                {
+}
+            ).addTo(map_0f0c47d6f1bab07797a6cab2654d5126);
+        
+    
+            var icon_d0688d8c3e14952c86011dd086a112d8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a1f9a76b0f2780aee0cb12e8a6e9c49d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c0d20b0cd0e0a1ce703ededfeea83f3c = $(`<div id="html_c0d20b0cd0e0a1ce703ededfeea83f3c" style="width: 100.0%; height: 100.0%;"><b>House Sparrow</b><br>Rohtak Rest</div>`)[0];
+                popup_a1f9a76b0f2780aee0cb12e8a6e9c49d.setContent(html_c0d20b0cd0e0a1ce703ededfeea83f3c);
+            
+        
+
+        marker_94cd398b9ecbe18c8892c0908e0ba38b.bindPopup(popup_a1f9a76b0f2780aee0cb12e8a6e9c49d)
+        ;
+
+        
+    
+    
+            marker_94cd398b9ecbe18c8892c0908e0ba38b.bindTooltip(
+                `<div>
+                     House Sparrow: Rohtak Rest
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_94cd398b9ecbe18c8892c0908e0ba38b.setIcon(icon_d0688d8c3e14952c86011dd086a112d8);
+            
+    
+            var marker_8194df5a9c9c93642f5e599fc94acf77 = L.marker(
+                [28.6, 77.2],
+                {
+}
+            ).addTo(map_0f0c47d6f1bab07797a6cab2654d5126);
+        
+    
+            var icon_2b3b9f116e57a0bd28cefce06228da0f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b0faa34ac590d4e4019ca936da0cb643 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4d32980e1902913b1231073aac339c5e = $(`<div id="html_4d32980e1902913b1231073aac339c5e" style="width: 100.0%; height: 100.0%;"><b>House Sparrow</b><br>Delhi Feeding</div>`)[0];
+                popup_b0faa34ac590d4e4019ca936da0cb643.setContent(html_4d32980e1902913b1231073aac339c5e);
+            
+        
+
+        marker_8194df5a9c9c93642f5e599fc94acf77.bindPopup(popup_b0faa34ac590d4e4019ca936da0cb643)
+        ;
+
+        
+    
+    
+            marker_8194df5a9c9c93642f5e599fc94acf77.bindTooltip(
+                `<div>
+                     House Sparrow: Delhi Feeding
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_8194df5a9c9c93642f5e599fc94acf77.setIcon(icon_2b3b9f116e57a0bd28cefce06228da0f);
+            
+    
+            var marker_5edaf2d8e30e193c99928a3c29f95954 = L.marker(
+                [27.2, 77.9],
+                {
+}
+            ).addTo(map_0f0c47d6f1bab07797a6cab2654d5126);
+        
+    
+            var icon_8be1e0e6d57c5b6d204673c2b830af39 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c77e4af9b032d99f82c4aed3e0a34544 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_937fc446e0a175317c5ff6f6ddeb4bfa = $(`<div id="html_937fc446e0a175317c5ff6f6ddeb4bfa" style="width: 100.0%; height: 100.0%;"><b>House Sparrow</b><br>Mathura Stop</div>`)[0];
+                popup_c77e4af9b032d99f82c4aed3e0a34544.setContent(html_937fc446e0a175317c5ff6f6ddeb4bfa);
+            
+        
+
+        marker_5edaf2d8e30e193c99928a3c29f95954.bindPopup(popup_c77e4af9b032d99f82c4aed3e0a34544)
+        ;
+
+        
+    
+    
+            marker_5edaf2d8e30e193c99928a3c29f95954.bindTooltip(
+                `<div>
+                     House Sparrow: Mathura Stop
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_5edaf2d8e30e193c99928a3c29f95954.setIcon(icon_8be1e0e6d57c5b6d204673c2b830af39);
+            
+    
+            var marker_69fac2da1a2ceea715154d05c77fca35 = L.marker(
+                [26.5, 80.3],
+                {
+}
+            ).addTo(map_0f0c47d6f1bab07797a6cab2654d5126);
+        
+    
+            var icon_980c308dee30b39229ae792e7cd3edd4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_194380edb82f0c31dad863e0551180fa = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b2093b9790c8aabbcfbc69108277509f = $(`<div id="html_b2093b9790c8aabbcfbc69108277509f" style="width: 100.0%; height: 100.0%;"><b>House Sparrow</b><br>Lucknow (End)</div>`)[0];
+                popup_194380edb82f0c31dad863e0551180fa.setContent(html_b2093b9790c8aabbcfbc69108277509f);
+            
+        
+
+        marker_69fac2da1a2ceea715154d05c77fca35.bindPopup(popup_194380edb82f0c31dad863e0551180fa)
+        ;
+
+        
+    
+    
+            marker_69fac2da1a2ceea715154d05c77fca35.bindTooltip(
+                `<div>
+                     House Sparrow: Lucknow (End)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_69fac2da1a2ceea715154d05c77fca35.setIcon(icon_980c308dee30b39229ae792e7cd3edd4);
+            
+    
+            var poly_line_a68607a74c7b44318125b8e12df7ee41 = L.polyline(
+                [[34.5, 76.5], [32.5, 75.5], [30.5, 76.5], [28.5, 77.5], [26.5, 78.5], [24.5, 80.5]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_0f0c47d6f1bab07797a6cab2654d5126);
+        
+    
+        var popup_57e221e624685711635d1979addfa0d7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_78afaff6d749f561835d1f66b96804bc = $(`<div id="html_78afaff6d749f561835d1f66b96804bc" style="width: 100.0%; height: 100.0%;">Mallard Duck Migration Route</div>`)[0];
+                popup_57e221e624685711635d1979addfa0d7.setContent(html_78afaff6d749f561835d1f66b96804bc);
+            
+        
+
+        poly_line_a68607a74c7b44318125b8e12df7ee41.bindPopup(popup_57e221e624685711635d1979addfa0d7)
+        ;
+
+        
+    
+    
+            poly_line_a68607a74c7b44318125b8e12df7ee41.bindTooltip(
+                `<div>
+                     Click to see Mallard Duck route
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_5a9d7cd15ee349cea40d545a470cf5b1 = L.marker(
+                [34.5, 76.5],
+                {
+}
+            ).addTo(map_0f0c47d6f1bab07797a6cab2654d5126);
+        
+    
+            var icon_c094a3fe3c35be31b404b3190e2de69f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ce2064cd1b317082378724fcae364271 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9a8c4435b9f807e5d394a89a55dbfe9c = $(`<div id="html_9a8c4435b9f807e5d394a89a55dbfe9c" style="width: 100.0%; height: 100.0%;"><b>Mallard Duck</b><br>Kargil (Start)</div>`)[0];
+                popup_ce2064cd1b317082378724fcae364271.setContent(html_9a8c4435b9f807e5d394a89a55dbfe9c);
+            
+        
+
+        marker_5a9d7cd15ee349cea40d545a470cf5b1.bindPopup(popup_ce2064cd1b317082378724fcae364271)
+        ;
+
+        
+    
+    
+            marker_5a9d7cd15ee349cea40d545a470cf5b1.bindTooltip(
+                `<div>
+                     Mallard Duck: Kargil (Start)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_5a9d7cd15ee349cea40d545a470cf5b1.setIcon(icon_c094a3fe3c35be31b404b3190e2de69f);
+            
+    
+            var marker_4d9b9686e871a2403d60a57011e040ba = L.marker(
+                [32.5, 75.5],
+                {
+}
+            ).addTo(map_0f0c47d6f1bab07797a6cab2654d5126);
+        
+    
+            var icon_4e5e61dac22d77f150b20ad4f69c0b0b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3367bb5e157ae71712f1e11d6d780b56 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5d2583c91017aa895f0459a5a4c4c8ee = $(`<div id="html_5d2583c91017aa895f0459a5a4c4c8ee" style="width: 100.0%; height: 100.0%;"><b>Mallard Duck</b><br>Jammu Rest</div>`)[0];
+                popup_3367bb5e157ae71712f1e11d6d780b56.setContent(html_5d2583c91017aa895f0459a5a4c4c8ee);
+            
+        
+
+        marker_4d9b9686e871a2403d60a57011e040ba.bindPopup(popup_3367bb5e157ae71712f1e11d6d780b56)
+        ;
+
+        
+    
+    
+            marker_4d9b9686e871a2403d60a57011e040ba.bindTooltip(
+                `<div>
+                     Mallard Duck: Jammu Rest
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_4d9b9686e871a2403d60a57011e040ba.setIcon(icon_4e5e61dac22d77f150b20ad4f69c0b0b);
+            
+    
+            var marker_9f48e015610751afe08101531439eeb3 = L.marker(
+                [30.5, 76.5],
+                {
+}
+            ).addTo(map_0f0c47d6f1bab07797a6cab2654d5126);
+        
+    
+            var icon_5a1f6199b35c64eeb73c26f1e2229eea = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_58c608fcb53eaab9acec07f1bb533b95 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8acea5d3570c818a44a49220f1b3d185 = $(`<div id="html_8acea5d3570c818a44a49220f1b3d185" style="width: 100.0%; height: 100.0%;"><b>Mallard Duck</b><br>Chandigarh Stop</div>`)[0];
+                popup_58c608fcb53eaab9acec07f1bb533b95.setContent(html_8acea5d3570c818a44a49220f1b3d185);
+            
+        
+
+        marker_9f48e015610751afe08101531439eeb3.bindPopup(popup_58c608fcb53eaab9acec07f1bb533b95)
+        ;
+
+        
+    
+    
+            marker_9f48e015610751afe08101531439eeb3.bindTooltip(
+                `<div>
+                     Mallard Duck: Chandigarh Stop
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_9f48e015610751afe08101531439eeb3.setIcon(icon_5a1f6199b35c64eeb73c26f1e2229eea);
+            
+    
+            var marker_b3f0e1680c07bb6c245d496e8c8ae8db = L.marker(
+                [28.5, 77.5],
+                {
+}
+            ).addTo(map_0f0c47d6f1bab07797a6cab2654d5126);
+        
+    
+            var icon_22c07386ea3e474c7482f9239a410ab9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_dd6bbd4148e4f4ff5eba39ba3b1c662a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_241cfafd67667fa8fdd6d7ffb73f0de5 = $(`<div id="html_241cfafd67667fa8fdd6d7ffb73f0de5" style="width: 100.0%; height: 100.0%;"><b>Mallard Duck</b><br>Delhi Feeding</div>`)[0];
+                popup_dd6bbd4148e4f4ff5eba39ba3b1c662a.setContent(html_241cfafd67667fa8fdd6d7ffb73f0de5);
+            
+        
+
+        marker_b3f0e1680c07bb6c245d496e8c8ae8db.bindPopup(popup_dd6bbd4148e4f4ff5eba39ba3b1c662a)
+        ;
+
+        
+    
+    
+            marker_b3f0e1680c07bb6c245d496e8c8ae8db.bindTooltip(
+                `<div>
+                     Mallard Duck: Delhi Feeding
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_b3f0e1680c07bb6c245d496e8c8ae8db.setIcon(icon_22c07386ea3e474c7482f9239a410ab9);
+            
+    
+            var marker_b5aec362ab878d569e049c38cf23fafd = L.marker(
+                [26.5, 78.5],
+                {
+}
+            ).addTo(map_0f0c47d6f1bab07797a6cab2654d5126);
+        
+    
+            var icon_9625d15a25a2108fde12f5146b5e98aa = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5e2bb773270a46ec0db851d80321e1bc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_78f31b799a586e1d19234c891905780c = $(`<div id="html_78f31b799a586e1d19234c891905780c" style="width: 100.0%; height: 100.0%;"><b>Mallard Duck</b><br>Gwalior Rest</div>`)[0];
+                popup_5e2bb773270a46ec0db851d80321e1bc.setContent(html_78f31b799a586e1d19234c891905780c);
+            
+        
+
+        marker_b5aec362ab878d569e049c38cf23fafd.bindPopup(popup_5e2bb773270a46ec0db851d80321e1bc)
+        ;
+
+        
+    
+    
+            marker_b5aec362ab878d569e049c38cf23fafd.bindTooltip(
+                `<div>
+                     Mallard Duck: Gwalior Rest
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_b5aec362ab878d569e049c38cf23fafd.setIcon(icon_9625d15a25a2108fde12f5146b5e98aa);
+            
+    
+            var marker_de6f0751b72728c7559e0fed17a3f42e = L.marker(
+                [24.5, 80.5],
+                {
+}
+            ).addTo(map_0f0c47d6f1bab07797a6cab2654d5126);
+        
+    
+            var icon_c00a156c210159dee9a98a310f7b2261 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_cf683f56e4e2e25e29cff32769cdfa99 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_31eb4c3a8afa41847bb90fa4fcd0356c = $(`<div id="html_31eb4c3a8afa41847bb90fa4fcd0356c" style="width: 100.0%; height: 100.0%;"><b>Mallard Duck</b><br>Allahabad (End)</div>`)[0];
+                popup_cf683f56e4e2e25e29cff32769cdfa99.setContent(html_31eb4c3a8afa41847bb90fa4fcd0356c);
+            
+        
+
+        marker_de6f0751b72728c7559e0fed17a3f42e.bindPopup(popup_cf683f56e4e2e25e29cff32769cdfa99)
+        ;
+
+        
+    
+    
+            marker_de6f0751b72728c7559e0fed17a3f42e.bindTooltip(
+                `<div>
+                     Mallard Duck: Allahabad (End)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_de6f0751b72728c7559e0fed17a3f42e.setIcon(icon_c00a156c210159dee9a98a310f7b2261);
+            
+</script>
+</html>
